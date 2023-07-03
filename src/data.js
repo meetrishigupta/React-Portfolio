@@ -16,14 +16,14 @@ export const projects = [
   },
   {
     title: "Theme Mode",
-    subtitle: "HTML CSS Vanilla Javascript",
+    subtitle: "HTML CSS Vanila Javascript",
     description: "Toggling Dark Mode and Regular Mode using Javascript",
     image: "/images/theme-mode.gif",
     link: "https://dark-mode-toggle-dom.vercel.app/",
   },
   {
     title: "Dynamic Card",
-    subtitle: "React J",
+    subtitle: "React JS",
     description: "Using React state handling function inside that input fields",
     image: "/images/dynamic-card.png",
     link: "https://dynamic-card-react.vercel.app/",

@@ -20,17 +20,22 @@ export default function Projects() {
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a
+              target="_blank"
               href={project.link}
               key={project.image}
-              className="sm:w-1/2 w-100 p-4"
+              className="sm:w-1/2 w-full p-4"
+              style={{ display: "flex" }} // Added flex display
             >
-              <div className="flex relative">
+              <div style={{height: "280px"}}className="flex relative w-full">
                 <img
                   alt="gallery"
-                  className="absolute inset-0 w-full h-30 object-cover object-center"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
                   src={project.image}
                 />
-                <div className="px-8 py-10 relative h-full z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                <div
+                  style={{ height: "100%" }} // Set the height of the parent container
+                  className="px-8 py-10 relative h-full z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100"
+                >
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                     {project.subtitle}
                   </h2>
