@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import { TerminalIcon, DocumentDownloadIcon } from "@heroicons/react/solid";
+import "./style.css"
 class Nav extends React.Component {
   constructor() {
     super();
@@ -26,16 +27,16 @@ class Nav extends React.Component {
                 Certifications
               </a>
             </nav>
-
-            <a
-
-              href="/doc/Resume Rishi Gupta.pdf" download="Rishi Gupta Resume"
-              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
-            >                        <DocumentDownloadIcon className="w-5 inline-block mb-0" />
-
-              Resume
-            </a>
+            <div class="downbutton">
+              <a
+                href="/doc/Resume Rishi Gupta.pdf" download="Rishi Gupta Resume"
+              >                       
+               <DocumentDownloadIcon className="w-5 inline-block mb-1 fill-neutral-500	" />
+                Resume
+              </a>
+            </div>
           </div>
+
         </header>
       </>
     );

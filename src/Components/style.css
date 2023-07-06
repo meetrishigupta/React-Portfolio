@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+html {
+    scroll-behavior: smooth;
+  }
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+
+p {
+	margin: 0;
+}
+
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgba(168, 239, 255, 1);
+	--c2: rgba(168, 239, 255, 0.1);
+}
+
+
+.downbutton {
+    color: white;
+
+    font-weight: 600;
+    font-size: 19px;
+
+    border: 0.35rem solid;
+    padding: 1vw;
+    border-image: conic-gradient(from var(--angle), var(--c2), rgb(34 197 94) 0.84turn, rgb(34 197 94) 0.44turn, var(--c2) 0.97turn) 30;
+    animation: borderRotate var(--d) cubic-bezier(0.51, 0.58, 1, 1) infinite forwards;
+}
+.downbutton:hover{
+color: rgba(255, 255, 255, 0.555);
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+
+#heading-one{
+    width: 15ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+.svglinkedin{
+  width: 40px;
+  fill: #0077b5;
+}
