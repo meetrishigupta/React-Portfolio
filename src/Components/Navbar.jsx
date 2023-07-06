@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRightIcon } from "@heroicons/react/solid";
-
+import { TerminalIcon, DocumentDownloadIcon } from "@heroicons/react/solid";
 class Nav extends React.Component {
   constructor() {
     super();
@@ -26,11 +26,14 @@ class Nav extends React.Component {
                 Certifications
               </a>
             </nav>
+
             <a
-              href="#contact"
-              className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
-            >
-              Hire Me
+
+              href="/doc/Resume Rishi Gupta.pdf" download="Rishi Gupta Resume"
+              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+            >                        <DocumentDownloadIcon className="w-5 inline-block mb-0" />
+
+              Resume
             </a>
           </div>
         </header>
