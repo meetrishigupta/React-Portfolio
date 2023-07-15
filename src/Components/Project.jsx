@@ -26,15 +26,15 @@ export default function Projects() {
               className="sm:w-1/2 w-full p-4"
               style={{ display: "flex" }} // Added flex display
             >
-              <div style={{height: "280px"}}className="flex relative w-full">
+              <div style={{ height: "280px" }} className="flex relative w-full">
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={project.image}
+                  src={project.image}     
                 />
                 <div
-                  style={{ height: "100%" }} // Set the height of the parent container
-                  className="px-8 py-10 relative h-full z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100"
+                  style={{ height: "100%" }}
+                  className="px-8 py-10 relative h-full z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 transition-opacity duration-500"
                 >
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                     {project.subtitle}
@@ -44,6 +44,7 @@ export default function Projects() {
                   </h1>
                   <p className="leading-relaxed">{project.description}</p>
                 </div>
+
               </div>
             </a>
           ))}
