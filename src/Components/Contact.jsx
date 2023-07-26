@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { db } from "../firebaseInit";
 import { doc, collection, addDoc } from "firebase/firestore";
-
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function Contact() {
 
   const [formData, setformData] = useState({name:"", email:"", message:""})
@@ -16,7 +17,8 @@ export default function Contact() {
       message: formData.message,
       date: new Date()
     });
-     
+    toast.success("Got it. I'll be in contact soon");
+
     setformData({
       name: "",
       email: "",
@@ -25,6 +27,8 @@ export default function Contact() {
   };
  
   return (
+    <>
+    <ToastContainer />
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
@@ -130,5 +134,7 @@ export default function Contact() {
         </form>
       </div>
     </section>
-  );
+
+    </>
+      );
 }
