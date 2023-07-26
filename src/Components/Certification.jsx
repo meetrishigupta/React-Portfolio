@@ -11,9 +11,9 @@ export default function Testimonials() {
           Certifications
         </h1>
         <div className="flex justify-center flex-wrap -m-4">
-          {certificate.map((certificate) => (
-            <div className="w-1/2 sm:w-1/3 lg:w-1/4 p-4" key={certificate.id}>
-              <div className="flex flex-col h-full relative">
+          {certificate.map((certificate, index) => (
+            <div  className="w-1/2 sm:w-1/3 lg:w-1/4 p-4" key={index}>
+              <div   className="flex flex-col h-full relative">
                 <img
                   alt="gallery"
                   className="w-full h-50 object-cover object-center shadow-[5px_20px_20px_1px_#f7fafc24]"

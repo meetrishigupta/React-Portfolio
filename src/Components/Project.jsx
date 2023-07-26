@@ -18,11 +18,11 @@ export default function Projects() {
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <a
               target="_blank"
               href={project.link}
-              key={project.image}
+              key={index}
               className="sm:w-1/2 w-full p-4"
               style={{ display: "flex" }} // Added flex display
             >

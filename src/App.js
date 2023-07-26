@@ -11,7 +11,6 @@ import { Helmet } from "react-helmet";
 function App() {
   return (
     <>
-    
     <Helmet>
         <title>Rishi Gupta | Frontend Developer</title>
         <meta name="description" content="Helmet application" />
