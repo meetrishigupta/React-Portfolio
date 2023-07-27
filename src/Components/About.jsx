@@ -19,9 +19,7 @@ export default class About extends React.Component {
               Creating incredible applications is my passion.
             </h1>
             <p className="mb-8 leading-relaxed">
-              Passionate Frontend Developer Crafting Immersive Web Experiences
-              with Innovation and Flawless Execution. Let's Elevate Your Online
-              Presence.
+            As a developer, I'm forever eager to explore the uncharted and create marvels that leave the world in awe.
             </p>
             <div className="flex justify-center">
               <a

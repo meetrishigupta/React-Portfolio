@@ -20,9 +20,10 @@ export default function Contact() {
     toast.success("Got it. I'll be in contact soon");
 
     setformData({
-      name: "",
-      email: "",
       message: "",
+      email: "",
+      name: "",
+     
     });
   };
  
