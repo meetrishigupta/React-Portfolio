@@ -22,11 +22,11 @@ export const projects = [
     link: "https://dark-mode-toggle-dom.vercel.app/",
   },
   {
-    title: "Dynamic Card",
-    subtitle: "React JS",
-    description: "Using React state handling function inside that input fields",
-    image: "/images/dynamic-card.png",
-    link: "https://dynamic-card-react.vercel.app/",
+    title: "Photofolio Database",
+    subtitle: "React JS + Firebase",
+    description: "This Project is based on to set save your images into the the Firebase Database using NPM Packages like Toast & react spinner",
+    image: "/images/photofolio.jpg",
+    link: "https://photofolio-database.vercel.app/",
   },
 ];
 
