@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { db } from "../firebaseInit";
+import { Helmet } from "react-helmet";
 import { doc, collection, addDoc } from "firebase/firestore";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
