@@ -1,31 +1,21 @@
-import { useState, useEffect } from "react";
-import { db } from "../firebaseInit";
-import { Helmet } from "react-helmet";
-import { doc, collection, addDoc } from "firebase/firestore";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useRef} from "react";
+import emailjs from '@emailjs/browser';
+
 export default function Contact() {
+  const form = useRef();
 
-  const [formData, setformData] = useState({name:"", email:"", message:""})
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-  
-    console.log("Form submitted!");
-   
-    const docRef = await addDoc(collection(db, "form"), {
-      name: formData.name,
-      email: formData.email,
-      message: formData.message,
-      date: new Date()
-    });
-    toast.success("Got it. I'll be in contact soon");
 
-    setformData({
-      message: "",
-      email: "",
-      name: "",
-     
-    });
+    emailjs.sendForm('service_ck31oaj', 'template_t36v03b', form.current, 'cu3dGrB_jeQLxKI6_')
+      .then((result) => {
+        toast.success("Email sent successfully!"); // Display success toast
+        form.current.reset(); 
+      }, (error) => {
+        toast.error("Email was not Send !"); // Display success toast
+      });
   };
  
   return (
@@ -70,8 +60,9 @@ export default function Contact() {
         <form
           name="contact"
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
-          onSubmit={handleSubmit}
-        >
+          ref={form} onSubmit={sendEmail}
+        >   
+
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             Hire Me
           </h2>
@@ -86,12 +77,11 @@ export default function Contact() {
               Name
             </label>
             <input
+            required
               type="text"
               id="name"
-              name="name"
-              value={formData.name}
-              onChange={(e)=>{setformData({...formData, name: e.target.value})}}
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              name="user_name"
+   className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -99,18 +89,17 @@ export default function Contact() {
               Email
             </label>
             <input
+            required
               type="email"
               id="email"
-              value={formData.email}
-
-              name="email"
-              onChange={(e)=>{setformData({...formData, email: e.target.value})}}
-
+              name="user_email"
+      
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
             <label
+            required
               htmlFor="message"
               className="leading-7 text-sm text-gray-400"
             >
@@ -118,10 +107,7 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
-              onChange={(e)=>{setformData({...formData, message: e.target.value})}}
               name="message"
-              value={formData.message}
-
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
           </div>
