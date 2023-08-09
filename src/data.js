@@ -35,25 +35,25 @@ export const skills = [
     skilly: "HTML & CSS",
   },
   {
-    skilly: "Javascript",
+    skilly: "Javascript ES6",
   },
   {
-    skilly: "React",
+    skilly: "React JS",
   },
   {
-    skilly: "Node",
+    skilly: "NPM Packages",
   },
   {
     skilly: "Tailwind & SASS",
   },
   {
-    skilly: "Adobe Photoshop",
+    skilly: "Firebase Realtime CRUD",
   },
 ];
 
 export const certificate = [
   {
-    title: "Frontend Development Javascript by Coding Ninjas",
+    title: "Frontend Development React by Coding Ninjas",
     img: "/images/cn-front-end.png",
   },
   {
