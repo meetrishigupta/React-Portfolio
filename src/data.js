@@ -15,11 +15,11 @@ export const projects = [
     link: "https://todoapp-sigma-nine.vercel.app/",
   },
   {
-    title: "Theme Mode",
-    subtitle: "HTML CSS Vanila Javascript",
-    description: "Toggling Dark Mode and Regular Mode using Javascript",
-    image: "/images/theme-mode.gif",
-    link: "https://dark-mode-toggle-dom.vercel.app/",
+    title: "BusyBuy E-commerce",
+    subtitle: "ReactJS + Firebase + React Routing",
+    description: "Busybuy have a featuring that to showase the product my filter feature price and category, search them, add to Cart for future I learned redux it convert to in total ecommerce app ",
+    image: "/images/busy-buy.png",
+    link: "https://busybuy-ecommerce.vercel.app/",
   },
   {
     title: "Photofolio Database",
