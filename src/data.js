@@ -35,19 +35,31 @@ export const skills = [
     skilly: "HTML & CSS",
   },
   {
-    skilly: "Javascript ES6",
+    skilly: "SASS/ Tailwind/ MUI",
   },
   {
-    skilly: "React JS",
+    skilly: "Javascript ES6, Velo by WiX",
   },
   {
-    skilly: "NPM Packages",
+    skilly: "DOM Manipulation",
   },
   {
-    skilly: "Tailwind & SASS",
+    skilly: "Git (Github), Gitlab, Sandbox",
   },
   {
-    skilly: "Firebase Realtime CRUD",
+    skilly: "React JS (Routing, Context API, Hooks)",
+  },
+  {
+    skilly: "Rest API, Axios",
+  },
+  {
+    skilly: "UID (User Interface Design)",
+  },
+  {
+    skilly: "Firebase CRUD , Authentication check",
+  },
+  {
+    skilly: "UX/ UI & CMS Tools (WiX, Figma, Adobe XD)",
   },
 ];
 
