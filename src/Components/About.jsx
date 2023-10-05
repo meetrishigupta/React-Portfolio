@@ -16,7 +16,7 @@ export default class About extends React.Component {
               Hi, I'm <span style={{ color: "#22c55e" }}>Rishi.</span>
             </h1>
             <h1 className="title-font sm:text-4xl text-3xl mb-6 font-medium text-white">
-              Creating incredible applications is my passion.
+            I thrive in developing outstanding, impactful applications.
             </h1>
             <p className="mb-8 leading-relaxed">
             As a developer, I'm forever eager to explore the uncharted and create marvels that leave the world in awe.
