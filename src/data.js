@@ -17,16 +17,26 @@ export const projects = [
   {
     title: "BusyBuy E-commerce",
     subtitle: "ReactJS + Firebase + React Routing",
-    description: "Busybuy have a featuring that to showase the product my filter feature price and category, search them, add to Cart for future I learned redux it convert to in total ecommerce app ",
+    description:
+      "Busybuy have a featuring that to showase the product my filter feature price and category, search them, add to Cart for future I learned redux it convert to in total ecommerce app ",
     image: "/images/busy-buy.png",
     link: "https://busybuy-ecommerce.vercel.app/",
   },
   {
     title: "Photofolio Database",
     subtitle: "React JS + Firebase",
-    description: "This Project is based on to set save your images into the the Firebase Database using NPM Packages like Toast & react spinner",
+    description:
+      "This Project is based on to set save your images into the the Firebase Database using NPM Packages like Toast & react spinner",
     image: "/images/photofolio.jpg",
     link: "https://photofolio-database.vercel.app/",
+  },
+  {
+    title: "Netflix UI Clone ",
+    subtitle: "React JS + API + Axios",
+    description:
+      "This Project is based on showing Netflix updated movies and series that comes from TMDB API call using axios",
+    image: "/images/netfix-ui-page.png",
+    link: "https://netflix-app-ui-git-main-meetrishigupta.vercel.app/",
   },
 ];
 
