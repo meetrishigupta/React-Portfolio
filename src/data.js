@@ -36,7 +36,7 @@ export const projects = [
     description:
       "This Project is based on showing Netflix updated movies and series that comes from TMDB API call using axios",
     image: "/images/netfix-ui-page.png",
-    link: "https://netflix-app-ui-git-main-meetrishigupta.vercel.app/",
+    link: "https://netflix-app-ui-meetrishigupta.vercel.app/",
   },
 ];
 
