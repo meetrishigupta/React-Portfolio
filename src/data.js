@@ -75,7 +75,7 @@ export const skills = [
 
 export const certificate = [
   {
-    title: "Frontend Development React by Coding Ninjas",
+    title: "Advance Front-End Web Development with React",
     img: "/images/cn-front-end.png",
   },
   {
