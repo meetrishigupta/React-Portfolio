@@ -10,7 +10,7 @@ export const projects = [
   {
     title: "ToDo App",
     subtitle: "Javascript ES6",
-    description: "A simple todo's single page application",
+    description: "A simple todo single page application",
     image: "/images/Todos.png",
     link: "https://todoapp-sigma-nine.vercel.app/",
   },
